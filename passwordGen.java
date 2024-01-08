@@ -43,10 +43,11 @@ public class passwordGen {
             }
         } else {
 
-            if (password.equals("1122334455")) {
+            if (password.equals("1122334455") | password.contains("123456789")) {
                 System.out.println("weak");
+            } else {
+                System.out.println("Strong");
             }
-            System.out.println("Strong");
         }
         System.out.println(" Press '1' to Generate new password");
         int checking = scanner.nextInt();
